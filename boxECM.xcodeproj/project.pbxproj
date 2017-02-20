@@ -16,6 +16,8 @@
 		22CDBFE41E5B8BCF007EF8F8 /* boxECMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFE31E5B8BCF007EF8F8 /* boxECMUITests.swift */; };
 		22CDBFF41E5B99B6007EF8F8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFF31E5B99B6007EF8F8 /* Podfile */; };
 		22CDBFF61E5B9A86007EF8F8 /* AppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFF51E5B9A86007EF8F8 /* AppSpec.swift */; };
+		22CDBFF91E5BA1FB007EF8F8 /* BoxServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFF81E5BA1FB007EF8F8 /* BoxServiceTest.swift */; };
+		22CDBFFB1E5BA216007EF8F8 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFFA1E5BA216007EF8F8 /* BoxService.swift */; };
 		77127EDFB1B9DEC090CA4B20 /* Pods_boxECM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFDC1047808074818DD6F5D0 /* Pods_boxECM.framework */; };
 		9526698E44F5333D6B84C671 /* Pods_boxECMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 367950269A234F41BAB3CC33 /* Pods_boxECMUITests.framework */; };
 		E7DD984C81FFE9F7488C4047 /* Pods_boxECMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CA82AF697A0FA71291F5EE3 /* Pods_boxECMTests.framework */; };
@@ -55,6 +57,8 @@
 		22CDBFE51E5B8BCF007EF8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CDBFF31E5B99B6007EF8F8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		22CDBFF51E5B9A86007EF8F8 /* AppSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSpec.swift; sourceTree = "<group>"; };
+		22CDBFF81E5BA1FB007EF8F8 /* BoxServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxServiceTest.swift; sourceTree = "<group>"; };
+		22CDBFFA1E5BA216007EF8F8 /* BoxService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
 		367950269A234F41BAB3CC33 /* Pods_boxECMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_boxECMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		535CDF3C27BAAA0547CE9C5C /* Pods-boxECMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boxECMTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-boxECMTests/Pods-boxECMTests.release.xcconfig"; sourceTree = "<group>"; };
 		542DBE1B496653959CEF1E0E /* Pods-boxECMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-boxECMTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-boxECMTests/Pods-boxECMTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				22CDBFCA1E5B8BCF007EF8F8 /* Assets.xcassets */,
 				22CDBFCC1E5B8BCF007EF8F8 /* LaunchScreen.storyboard */,
 				22CDBFCF1E5B8BCF007EF8F8 /* Info.plist */,
+				22CDBFFA1E5BA216007EF8F8 /* BoxService.swift */,
 			);
 			path = boxECM;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				22CDBFD81E5B8BCF007EF8F8 /* boxECMTests.swift */,
 				22CDBFDA1E5B8BCF007EF8F8 /* Info.plist */,
 				22CDBFF51E5B9A86007EF8F8 /* AppSpec.swift */,
+				22CDBFF81E5BA1FB007EF8F8 /* BoxServiceTest.swift */,
 			);
 			path = boxECMTests;
 			sourceTree = "<group>";
@@ -249,17 +255,20 @@
 					22CDBFBF1E5B8BCF007EF8F8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = J9T57DG7T3;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					22CDBFD31E5B8BCF007EF8F8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = J9T57DG7T3;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 22CDBFBF1E5B8BCF007EF8F8;
 					};
 					22CDBFDE1E5B8BCF007EF8F8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = J9T57DG7T3;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 22CDBFBF1E5B8BCF007EF8F8;
 					};
@@ -457,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22CDBFC61E5B8BCF007EF8F8 /* ViewController.swift in Sources */,
+				22CDBFFB1E5BA216007EF8F8 /* BoxService.swift in Sources */,
 				22CDBFC41E5B8BCF007EF8F8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CDBFF91E5BA1FB007EF8F8 /* BoxServiceTest.swift in Sources */,
 				22CDBFF61E5B9A86007EF8F8 /* AppSpec.swift in Sources */,
 				22CDBFD91E5B8BCF007EF8F8 /* boxECMTests.swift in Sources */,
 			);

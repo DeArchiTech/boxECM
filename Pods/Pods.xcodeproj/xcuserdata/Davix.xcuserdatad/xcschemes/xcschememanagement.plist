@@ -29,6 +29,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>box-ios-sdk-BoxContentSDKResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>box-ios-sdk.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -42,17 +52,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3C900705B74BFF1F58DF15A8D77CACDF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C3F3DFB0A94CC4930ADE9466FB1C404</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84EB82F392BD765C4F8B7EA6AB31DF29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>967936874FBD70DD90076E180C9FC8C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>C131AF64A632F557E30701764910D66D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD00026D9B51CE6875CBF80712438269</key>
 		<dict>
 			<key>primary</key>
 			<true/>

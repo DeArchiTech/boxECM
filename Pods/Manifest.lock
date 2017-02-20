@@ -1,8 +1,15 @@
 PODS:
+  - box-ios-sdk (1.0.14):
+    - box-ios-sdk/logger (= 1.0.14)
+    - box-ios-sdk/no-arc (= 1.0.14)
+  - box-ios-sdk/logger (1.0.14)
+  - box-ios-sdk/no-arc (1.0.14):
+    - box-ios-sdk/logger
   - Nimble (6.0.1)
   - Quick (1.1.0)
 
 DEPENDENCIES:
+  - box-ios-sdk
   - Nimble (from `https://github.com/Quick/Nimble.git`)
   - Quick (from `https://github.com/Quick/Quick.git`)
 
@@ -21,9 +28,10 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Quick/Quick.git
 
 SPEC CHECKSUMS:
+  box-ios-sdk: 8034a7b0fcac562105725afa744011c81da99398
   Nimble: 1aafe036e5b03c5a30d07430fddca564af570696
   Quick: 4700beb8056662b579facd79eaca7f04fb3d48e6
 
-PODFILE CHECKSUM: ebb3970b7285394050a3d25bb9b10069a97b8c08
+PODFILE CHECKSUM: f01218b648d7aa63bbfa31835f22f897bcd4e83e
 
 COCOAPODS: 1.2.0.beta.1
