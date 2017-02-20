@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import BoxContentSDK
 @testable import boxECM
 
 class BoxServiceTest: XCTestCase {
@@ -43,20 +44,28 @@ class BoxServiceTest: XCTestCase {
         //1)First Authenticate
         self.service?.authenticate(){
             (user,error) in
-            self.validateResults(user, error: error)
+            self.validateResults(user, error: error as NSError?)
             //2)Second Upload After Being Authenticated
-            self.service?.upload(self.getImageData(), folderID: self.folderID, fileName: self.getFileName()){
+            var completion : ((BOXFile? , Error) -> Void) = {
                 (file,error) in
                 //3)Assert After Files being uploaded
                 self.validateResults(file, error: error)
                 exp.fulfill()
             }
+            let fileBlock : BOXFileBlock = {
+                (file,error) in
+                //3)Assert After Files being uploaded
+                self.validateResults(file, error: error)
+                exp.fulfill()
+            }
+            self.service?.upload(data: self.getImageData() as NSData, folderID: self.folderID, fileName: self.getFileName(), completion: completion, block: fileBlock)
+
         }
         waitForExpectations(timeout: 60, handler: { error in
             XCTAssertNil(error, "Error")})
     }
     
-    func validateResults(_ object : AnyObject?, error : NSError?){
+    func validateResults(_ object : AnyObject?, error : Error?){
         if error != nil {
             print(error)
         }
