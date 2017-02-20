@@ -1,0 +1,6 @@
+framework module Pods_boxECMUITests {
+  umbrella header "Pods-boxECMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

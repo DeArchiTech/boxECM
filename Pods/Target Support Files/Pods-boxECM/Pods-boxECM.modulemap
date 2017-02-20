@@ -1,0 +1,6 @@
+framework module Pods_boxECM {
+  umbrella header "Pods-boxECM-umbrella.h"
+
+  export *
+  module * { export * }
+}
