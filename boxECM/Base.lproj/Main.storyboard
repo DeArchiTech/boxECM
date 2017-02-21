@@ -1,26 +1,80 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ud5-qC-jrX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Proof Of Delivery-->
+        <scene sceneID="s1v-QH-igC">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" title="Proof Of Delivery" id="ud5-qC-jrX" customClass="MainViewController" customModule="boxECM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="CJm-Ws-YeI"/>
+                        <viewControllerLayoutGuide type="bottom" id="abG-Rs-5pz"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="oXj-Xh-HNm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ctx-JR-odr">
+                                <rect key="frame" x="87" y="77" width="200" height="107"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldr-Pz-Qxf">
+                                <rect key="frame" x="102" y="369" width="170" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="dhP-mU-r5R"/>
+                                    <constraint firstAttribute="width" constant="170" id="h86-Se-HYC"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="gallary.png"/>
+                                <connections>
+                                    <action selector="galleryBtnClicked:" destination="ud5-qC-jrX" eventType="touchUpInside" id="65f-SU-M5f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anx-BU-DqT">
+                                <rect key="frame" x="102" y="195" width="170" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="TBX-lp-qJi"/>
+                                    <constraint firstAttribute="width" constant="170" id="i58-Vd-Nej"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="camera.png"/>
+                                <connections>
+                                    <action selector="cameraBtnClicked:" destination="ud5-qC-jrX" eventType="touchUpInside" id="Y4I-QV-J7h"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="http://revasolutions.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTV-AA-6qN">
+                                <rect key="frame" x="94" y="550" width="186" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.88304084540000005" green="0.39320194720000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vTV-AA-6qN" firstAttribute="centerX" secondItem="oXj-Xh-HNm" secondAttribute="centerX" id="4f4-eM-PoG"/>
+                            <constraint firstItem="anx-BU-DqT" firstAttribute="centerX" secondItem="oXj-Xh-HNm" secondAttribute="centerX" id="53A-q4-YQ6"/>
+                            <constraint firstItem="ldr-Pz-Qxf" firstAttribute="centerX" secondItem="oXj-Xh-HNm" secondAttribute="centerX" id="5kG-42-gpD"/>
+                            <constraint firstItem="ctx-JR-odr" firstAttribute="top" secondItem="CJm-Ws-YeI" secondAttribute="bottom" constant="13" id="NBt-1r-a1V"/>
+                            <constraint firstItem="ldr-Pz-Qxf" firstAttribute="top" secondItem="anx-BU-DqT" secondAttribute="bottom" constant="20" id="Xfc-ME-gE4"/>
+                            <constraint firstItem="ctx-JR-odr" firstAttribute="centerX" secondItem="oXj-Xh-HNm" secondAttribute="centerX" id="scK-BJ-bM2"/>
+                            <constraint firstItem="vTV-AA-6qN" firstAttribute="top" secondItem="ldr-Pz-Qxf" secondAttribute="bottom" constant="27" id="zQV-8e-teS"/>
+                            <constraint firstItem="anx-BU-DqT" firstAttribute="top" secondItem="ctx-JR-odr" secondAttribute="bottom" constant="11" id="zbF-aY-UbK"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Proof Of Delivery Demo" id="e6P-5e-bsU"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWu-eB-F0G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1230" y="-226"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera.png" width="512" height="512"/>
+        <image name="gallary.png" width="512" height="411"/>
+        <image name="logo.png" width="136" height="90"/>
+    </resources>
 </document>
