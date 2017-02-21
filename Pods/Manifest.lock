@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.2.0)
   - box-ios-sdk (1.0.14):
     - box-ios-sdk/logger (= 1.0.14)
     - box-ios-sdk/no-arc (= 1.0.14)
@@ -9,6 +10,7 @@ PODS:
   - Quick (1.1.0)
 
 DEPENDENCIES:
+  - Alamofire
   - box-ios-sdk
   - Nimble (from `https://github.com/Quick/Nimble.git`)
   - Quick (from `https://github.com/Quick/Quick.git`)
@@ -28,10 +30,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Quick/Quick.git
 
 SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   box-ios-sdk: 8034a7b0fcac562105725afa744011c81da99398
   Nimble: 1aafe036e5b03c5a30d07430fddca564af570696
   Quick: 4700beb8056662b579facd79eaca7f04fb3d48e6
 
-PODFILE CHECKSUM: f01218b648d7aa63bbfa31835f22f897bcd4e83e
+PODFILE CHECKSUM: 713caaa58ca4ce427ef8bfea659d0078c74f1d1c
 
-COCOAPODS: 1.2.0.beta.1
+COCOAPODS: 1.2.0

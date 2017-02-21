@@ -13,11 +13,19 @@
 		22130F591E5CCB8700343AFD /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 22130F551E5CCB8700343AFD /* logo.png */; };
 		22130F5A1E5CCB8700343AFD /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22130F561E5CCB8700343AFD /* testImg.jpg */; };
 		22130F5B1E5CCB8C00343AFD /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 22130F561E5CCB8700343AFD /* testImg.jpg */; };
+		2243FE201E5CD46800899472 /* OCRServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE1F1E5CD46800899472 /* OCRServiceTest.swift */; };
+		2243FE221E5CD4C300899472 /* metroPod2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2243FE211E5CD4C300899472 /* metroPod2.png */; };
+		2243FE231E5CD4CA00899472 /* metroPod2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2243FE211E5CD4C300899472 /* metroPod2.png */; };
+		2243FE251E5CD50B00899472 /* OCRTextParserTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE241E5CD50B00899472 /* OCRTextParserTest.swift */; };
+		2243FE271E5CD52400899472 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE261E5CD52400899472 /* OCRService.swift */; };
+		2243FE291E5CD53200899472 /* OCRTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE281E5CD53200899472 /* OCRTextParser.swift */; };
+		2243FE2C1E5CD5A800899472 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE2B1E5CD5A800899472 /* Constants.swift */; };
+		2243FE2E1E5CD5F400899472 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE2D1E5CD5F400899472 /* ImageUtil.swift */; };
+		2243FE301E5CD60D00899472 /* BoxServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE2F1E5CD60D00899472 /* BoxServiceUtil.swift */; };
 		22CDBFC41E5B8BCF007EF8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFC31E5B8BCF007EF8F8 /* AppDelegate.swift */; };
 		22CDBFC91E5B8BCF007EF8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFC71E5B8BCF007EF8F8 /* Main.storyboard */; };
 		22CDBFCB1E5B8BCF007EF8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFCA1E5B8BCF007EF8F8 /* Assets.xcassets */; };
 		22CDBFCE1E5B8BCF007EF8F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFCC1E5B8BCF007EF8F8 /* LaunchScreen.storyboard */; };
-		22CDBFD91E5B8BCF007EF8F8 /* boxECMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFD81E5B8BCF007EF8F8 /* boxECMTests.swift */; };
 		22CDBFE41E5B8BCF007EF8F8 /* boxECMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFE31E5B8BCF007EF8F8 /* boxECMUITests.swift */; };
 		22CDBFF41E5B99B6007EF8F8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFF31E5B99B6007EF8F8 /* Podfile */; };
 		22CDBFF61E5B9A86007EF8F8 /* AppSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFF51E5B9A86007EF8F8 /* AppSpec.swift */; };
@@ -52,6 +60,14 @@
 		22130F541E5CCB8700343AFD /* gallary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = gallary.png; path = Resources/gallary.png; sourceTree = "<group>"; };
 		22130F551E5CCB8700343AFD /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
 		22130F561E5CCB8700343AFD /* testImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = testImg.jpg; path = Resources/testImg.jpg; sourceTree = "<group>"; };
+		2243FE1F1E5CD46800899472 /* OCRServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRServiceTest.swift; sourceTree = "<group>"; };
+		2243FE211E5CD4C300899472 /* metroPod2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = metroPod2.png; path = Resources/metroPod2.png; sourceTree = "<group>"; };
+		2243FE241E5CD50B00899472 /* OCRTextParserTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRTextParserTest.swift; sourceTree = "<group>"; };
+		2243FE261E5CD52400899472 /* OCRService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		2243FE281E5CD53200899472 /* OCRTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRTextParser.swift; sourceTree = "<group>"; };
+		2243FE2B1E5CD5A800899472 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2243FE2D1E5CD5F400899472 /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
+		2243FE2F1E5CD60D00899472 /* BoxServiceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxServiceUtil.swift; sourceTree = "<group>"; };
 		22CDBFC01E5B8BCF007EF8F8 /* boxECM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boxECM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CDBFC31E5B8BCF007EF8F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22CDBFC81E5B8BCF007EF8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,7 +75,6 @@
 		22CDBFCD1E5B8BCF007EF8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22CDBFCF1E5B8BCF007EF8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CDBFD41E5B8BCF007EF8F8 /* boxECMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boxECMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22CDBFD81E5B8BCF007EF8F8 /* boxECMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxECMTests.swift; sourceTree = "<group>"; };
 		22CDBFDA1E5B8BCF007EF8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22CDBFDF1E5B8BCF007EF8F8 /* boxECMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boxECMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CDBFE31E5B8BCF007EF8F8 /* boxECMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boxECMUITests.swift; sourceTree = "<group>"; };
@@ -110,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				22CDBFFA1E5BA216007EF8F8 /* BoxService.swift */,
+				2243FE261E5CD52400899472 /* OCRService.swift */,
+				2243FE281E5CD53200899472 /* OCRTextParser.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -125,12 +142,23 @@
 		22130F521E5CCB7400343AFD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2243FE211E5CD4C300899472 /* metroPod2.png */,
 				22130F531E5CCB8700343AFD /* camera.png */,
 				22130F541E5CCB8700343AFD /* gallary.png */,
 				22130F551E5CCB8700343AFD /* logo.png */,
 				22130F561E5CCB8700343AFD /* testImg.jpg */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		2243FE2A1E5CD59E00899472 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2243FE2B1E5CD5A800899472 /* Constants.swift */,
+				2243FE2D1E5CD5F400899472 /* ImageUtil.swift */,
+				2243FE2F1E5CD60D00899472 /* BoxServiceUtil.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		22CDBFB71E5B8BCE007EF8F8 = {
@@ -160,6 +188,7 @@
 		22CDBFC21E5B8BCF007EF8F8 /* boxECM */ = {
 			isa = PBXGroup;
 			children = (
+				2243FE2A1E5CD59E00899472 /* Util */,
 				22130F511E5CCA5F00343AFD /* ViewController */,
 				22130F501E5CCA3800343AFD /* Service */,
 				22CDBFC31E5B8BCF007EF8F8 /* AppDelegate.swift */,
@@ -174,10 +203,11 @@
 		22CDBFD71E5B8BCF007EF8F8 /* boxECMTests */ = {
 			isa = PBXGroup;
 			children = (
-				22CDBFD81E5B8BCF007EF8F8 /* boxECMTests.swift */,
 				22CDBFDA1E5B8BCF007EF8F8 /* Info.plist */,
 				22CDBFF51E5B9A86007EF8F8 /* AppSpec.swift */,
 				22CDBFF81E5BA1FB007EF8F8 /* BoxServiceTest.swift */,
+				2243FE1F1E5CD46800899472 /* OCRServiceTest.swift */,
+				2243FE241E5CD50B00899472 /* OCRTextParserTest.swift */,
 			);
 			path = boxECMTests;
 			sourceTree = "<group>";
@@ -337,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22130F581E5CCB8700343AFD /* gallary.png in Resources */,
+				2243FE231E5CD4CA00899472 /* metroPod2.png in Resources */,
 				22CDBFCE1E5B8BCF007EF8F8 /* LaunchScreen.storyboard in Resources */,
 				22CDBFCB1E5B8BCF007EF8F8 /* Assets.xcassets in Resources */,
 				22CDBFF41E5B99B6007EF8F8 /* Podfile in Resources */,
@@ -351,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2243FE221E5CD4C300899472 /* metroPod2.png in Resources */,
 				22130F5B1E5CCB8C00343AFD /* testImg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,9 +539,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2243FE291E5CD53200899472 /* OCRTextParser.swift in Sources */,
+				2243FE2E1E5CD5F400899472 /* ImageUtil.swift in Sources */,
+				2243FE271E5CD52400899472 /* OCRService.swift in Sources */,
 				22130F4F1E5CCA0D00343AFD /* ImageSelectionViewController.swift in Sources */,
 				22CDBFFB1E5BA216007EF8F8 /* BoxService.swift in Sources */,
 				22CDBFC41E5B8BCF007EF8F8 /* AppDelegate.swift in Sources */,
+				2243FE2C1E5CD5A800899472 /* Constants.swift in Sources */,
+				2243FE301E5CD60D00899472 /* BoxServiceUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,9 +554,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2243FE251E5CD50B00899472 /* OCRTextParserTest.swift in Sources */,
+				2243FE201E5CD46800899472 /* OCRServiceTest.swift in Sources */,
 				22CDBFF91E5BA1FB007EF8F8 /* BoxServiceTest.swift in Sources */,
 				22CDBFF61E5B9A86007EF8F8 /* AppSpec.swift in Sources */,
-				22CDBFD91E5B8BCF007EF8F8 /* boxECMTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
