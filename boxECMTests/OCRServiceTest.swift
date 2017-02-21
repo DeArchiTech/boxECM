@@ -23,14 +23,14 @@ class OCRserviceTest: XCTestCase{
     
     func testPerformOcr(){
         
-        let exp = expectationWithDescription("Some Expectation To Be Filled")
-        self.service?.performOCR(self.getTestImg()){
+        let exp = expectation(description: "Some Expectation To Be Filled")
+        self.service?.performOCR(image: self.getTestImg()){
             (object) in
             XCTAssertNotNil(object)
             print(object)
             exp.fulfill()
         }
-        waitForExpectationsWithTimeout(60, handler: { error in
+        waitForExpectations(timeout: 60, handler: { error in
             XCTAssertNil(error, "Error")})
         
     }
@@ -44,8 +44,8 @@ class OCRserviceTest: XCTestCase{
     
     func getTestImg() -> UIImage{
         
-        let bundle = NSBundle(forClass: self.dynamicType)
-        return UIImage(named: "metroPod2.png", inBundle: bundle, compatibleWithTraitCollection: nil)!
+        let bundle = Bundle(for: type(of: self))
+        return UIImage(named: "metroPod2.png", in: bundle, compatibleWith: nil)!
         
     }
 }

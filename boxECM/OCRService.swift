@@ -17,13 +17,16 @@ class OCRservice{
     
     func performOCR(image : UIImage, completion: ((AnyObject?) -> Void)!){
         
-        Alamofire.upload(multipartFormData: self.createMultipart(image: image), with: self.createURL(), encodingCompletion: self.createCompletion(completion: completion))
+        let multipart = self.createMultipart(image: image)
+        let convertible = self.createURL()
+        let completion = self.createCompletion(completion: completion)
+        Alamofire.upload(multipartFormData: multipart, to: self.createURL(), encodingCompletion: completion)
     
     }
     
     func createURL() -> URLConvertible{
         
-        let url : URLConvertible = URL.init(string: self.endpoint)! 
+        let url : URLConvertible = URL.init(string: self.endpoint)!
         return url
     }
     

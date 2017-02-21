@@ -27,10 +27,10 @@ class OCRTextParserTest: XCTestCase{
         let dict = self.loadInJsonData()
         XCTAssertNotNil(dict)
         //2) Load in the string
-        let text = self.getParseStringFromDictionary(dict!)
+        let text = self.getParseStringFromDictionary(dict: dict!)
         XCTAssertNotNil(text)
         //3) Call service
-        let result = self.service?.parseText("FACTURE #", ocrText: text)
+        let result = self.service?.parseText(key: "FACTURE #", ocrText: text)
         //4) Validate the result
         let expected = "0007518729"
         XCTAssertEqual(result, expected)
@@ -46,15 +46,17 @@ class OCRTextParserTest: XCTestCase{
         
     }
     
+    
+    
     func loadInJsonData() -> NSDictionary?{
         
-        if let path = NSBundle.mainBundle().pathForResource("parseText", ofType: "json")
+        if let path = Bundle.main.path(forResource: "parseText", ofType: "json")
         {
             if let jsonData = NSData(contentsOfFile: path)
             {
                 let jsonResult : NSDictionary?
                 do{
-                    jsonResult = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as! NSDictionary
+                    jsonResult = try JSONSerialization.jsonObject(with: jsonData as Data, options: JSONSerialization.ReadingOptions.mutableContainers) as! NSDictionary
                     return jsonResult
                 }catch{
                     print("An Error has occured")
