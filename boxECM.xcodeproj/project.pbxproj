@@ -23,6 +23,7 @@
 		2243FE2E1E5CD5F400899472 /* ImageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE2D1E5CD5F400899472 /* ImageUtil.swift */; };
 		2243FE301E5CD60D00899472 /* BoxServiceUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE2F1E5CD60D00899472 /* BoxServiceUtil.swift */; };
 		2243FE321E5CED9800899472 /* parseText.json in Resources */ = {isa = PBXBuildFile; fileRef = 2243FE311E5CED9800899472 /* parseText.json */; };
+		2243FE361E5CF1B800899472 /* OCRServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE351E5CF1B800899472 /* OCRServiceSpec.swift */; };
 		22CDBFC41E5B8BCF007EF8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFC31E5B8BCF007EF8F8 /* AppDelegate.swift */; };
 		22CDBFC91E5B8BCF007EF8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFC71E5B8BCF007EF8F8 /* Main.storyboard */; };
 		22CDBFCB1E5B8BCF007EF8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFCA1E5B8BCF007EF8F8 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		2243FE2D1E5CD5F400899472 /* ImageUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageUtil.swift; sourceTree = "<group>"; };
 		2243FE2F1E5CD60D00899472 /* BoxServiceUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxServiceUtil.swift; sourceTree = "<group>"; };
 		2243FE311E5CED9800899472 /* parseText.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = parseText.json; path = Resources/parseText.json; sourceTree = "<group>"; };
+		2243FE351E5CF1B800899472 /* OCRServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRServiceSpec.swift; sourceTree = "<group>"; };
 		22CDBFC01E5B8BCF007EF8F8 /* boxECM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boxECM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22CDBFC31E5B8BCF007EF8F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22CDBFC81E5B8BCF007EF8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -164,6 +166,25 @@
 			name = Util;
 			sourceTree = "<group>";
 		};
+		2243FE331E5CF19400899472 /* Spec */ = {
+			isa = PBXGroup;
+			children = (
+				22CDBFF51E5B9A86007EF8F8 /* AppSpec.swift */,
+				2243FE351E5CF1B800899472 /* OCRServiceSpec.swift */,
+			);
+			name = Spec;
+			sourceTree = "<group>";
+		};
+		2243FE341E5CF19A00899472 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				22CDBFF81E5BA1FB007EF8F8 /* BoxServiceTest.swift */,
+				2243FE1F1E5CD46800899472 /* OCRServiceTest.swift */,
+				2243FE241E5CD50B00899472 /* OCRTextParserTest.swift */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
 		22CDBFB71E5B8BCE007EF8F8 = {
 			isa = PBXGroup;
 			children = (
@@ -206,11 +227,9 @@
 		22CDBFD71E5B8BCF007EF8F8 /* boxECMTests */ = {
 			isa = PBXGroup;
 			children = (
+				2243FE341E5CF19A00899472 /* Test */,
+				2243FE331E5CF19400899472 /* Spec */,
 				22CDBFDA1E5B8BCF007EF8F8 /* Info.plist */,
-				22CDBFF51E5B9A86007EF8F8 /* AppSpec.swift */,
-				22CDBFF81E5BA1FB007EF8F8 /* BoxServiceTest.swift */,
-				2243FE1F1E5CD46800899472 /* OCRServiceTest.swift */,
-				2243FE241E5CD50B00899472 /* OCRTextParserTest.swift */,
 			);
 			path = boxECMTests;
 			sourceTree = "<group>";
@@ -562,6 +581,7 @@
 				2243FE201E5CD46800899472 /* OCRServiceTest.swift in Sources */,
 				22CDBFF91E5BA1FB007EF8F8 /* BoxServiceTest.swift in Sources */,
 				22CDBFF61E5B9A86007EF8F8 /* AppSpec.swift in Sources */,
+				2243FE361E5CF1B800899472 /* OCRServiceSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
