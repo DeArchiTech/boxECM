@@ -12,7 +12,7 @@
         <!--Proof Of Delivery-->
         <scene sceneID="s1v-QH-igC">
             <objects>
-                <viewController storyboardIdentifier="ImageSelectionViewController" title="Proof Of Delivery" id="ud5-qC-jrX" customClass="ImageSelectionViewController" customModule="boxECM" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ImageSelectionViewController" title="Proof Of Delivery" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ud5-qC-jrX" customClass="ImageSelectionViewController" customModule="boxECM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="CJm-Ws-YeI"/>
                         <viewControllerLayoutGuide type="bottom" id="abG-Rs-5pz"/>

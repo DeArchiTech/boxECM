@@ -25,6 +25,7 @@
 		2243FE321E5CED9800899472 /* parseText.json in Resources */ = {isa = PBXBuildFile; fileRef = 2243FE311E5CED9800899472 /* parseText.json */; };
 		2243FE361E5CF1B800899472 /* OCRServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE351E5CF1B800899472 /* OCRServiceSpec.swift */; };
 		2243FE381E5CFEC900899472 /* ImageSelectionVCSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2243FE371E5CFEC900899472 /* ImageSelectionVCSpec.swift */; };
+		2243FE391E5D07EB00899472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFC71E5B8BCF007EF8F8 /* Main.storyboard */; };
 		22CDBFC41E5B8BCF007EF8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CDBFC31E5B8BCF007EF8F8 /* AppDelegate.swift */; };
 		22CDBFC91E5B8BCF007EF8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFC71E5B8BCF007EF8F8 /* Main.storyboard */; };
 		22CDBFCB1E5B8BCF007EF8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22CDBFCA1E5B8BCF007EF8F8 /* Assets.xcassets */; };
@@ -408,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2243FE391E5D07EB00899472 /* Main.storyboard in Resources */,
 				2243FE221E5CD4C300899472 /* metroPod2.png in Resources */,
 				22130F5B1E5CCB8C00343AFD /* testImg.jpg in Resources */,
 			);

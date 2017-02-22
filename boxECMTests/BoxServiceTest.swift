@@ -38,7 +38,6 @@ class BoxServiceTest: XCTestCase {
         
     }
     
-    //TODO FiX, item name in use error!
     func testUploadWithNSData() {
         
         let exp = expectation(description: "Some Expectation To Be Filled")
@@ -76,7 +75,7 @@ class BoxServiceTest: XCTestCase {
     
     func getFileName() -> String{
         
-        return "BeLe File Name" + String(arc4random_uniform(100))
+        return "BeLe" + String(arc4random_uniform(10)) + "File Name" + String(arc4random_uniform(100))
         
     }
     
