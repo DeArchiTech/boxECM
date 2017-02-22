@@ -14,18 +14,19 @@ class OCRServiceSpec: QuickSpec{
     
     override func spec(){
         describe("Perform OCR"){
-            let exp = expectation(description: "Some Expectation To Be Filled")
-            it("should return the parsed text in a json"){
-                let service = OCRservice.init()
-                let bundle = Bundle(for: type(of: self))
-                let image = UIImage(named: "metroPod2.png", in: bundle, compatibleWith: nil)!
-                service.performOCR(image: image){ result in
-                    print(result)
-                    expect(result).toNot(beNil())
+            context("it should pass"){
+                let exp = expectation(description: "Some Expectation To Be Filled")
+                it("should return the parsed text in a json"){
+                    let service = OCRservice.init()
+                    let bundle = Bundle(for: type(of: self))
+                    let image = UIImage(named: "pod.png", in: bundle, compatibleWith: nil)!
+                    service.performOCR(image: image){ result in
+                        print(result)
+                        expect(result).toNot(beNil())
+                    }
                 }
+
             }
         }
-
     }
-
 }

@@ -13,28 +13,41 @@ import Quick
 
 class ImageSelectionVCSpec: QuickSpec{
     
-override func spec() {
+    override func spec() {
     var vc : UIViewController?
     var nc : UINavigationController?
+    var ivc : ImageSelectionViewController?
+    var subject : ImageSelectionViewController?
     
     beforeEach {
         //Set up view controller from Story Board
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle(for: type(of: self)))
         nc = storyboard.instantiateInitialViewController() as? UINavigationController
         vc = storyboard.instantiateViewController(withIdentifier: "ImageSelectionViewController")
+        ivc = ImageSelectionViewController()
         UIApplication.shared.keyWindow!.rootViewController = nc
         let _ = nc?.view
         let _ = vc?.view
+        expect(nc).toNot(beNil())
+        expect(vc).toNot(beNil())
+        expect(ivc).toNot(beNil())
+        subject = ivc
     }
     
     describe(".cameraAction()"){
-        it("should open the camera"){
-            expect(nc).toNot(beNil())
-            expect(vc).toNot(beNil())
-            let ivc : ImageSelectionViewController = vc as ImageSelectionViewController?
-            expect(ivc).toNot(beNil())
+        context("success case"){
+            it("should open the camera"){
+                let completion : ((Any) -> Void) = { result in
+                    expect(result).toNot(beNil())
+                }
+                subject!.openCamera(completion: completion)
+            }
+        }
+        context("failure case"){
+            it("should alert failure"){
+                
+            }
         }
     }
-}
-    
+    }
 }
