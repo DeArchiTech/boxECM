@@ -1,0 +1,6 @@
+framework module UIImageDSP {
+  umbrella header "UIImageDSP-umbrella.h"
+
+  export *
+  module * { export * }
+}

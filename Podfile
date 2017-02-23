@@ -4,8 +4,19 @@
 target 'boxECM' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'box-ios-sdk'
+  #internet
   pod 'Alamofire'
+  #box
+  pod 'box-ios-sdk'
+  #image
+  pod 'GPUImage'
+  pod 'UIImageDSP'
+  pod 'ImageMagick', '6.8.8-9'
+  #ocr`
+  pod 'SwiftOCR'
+  pod 'TesseractOCRiOS', :git => 'https://github.com/chaoskyme/Tesseract-OCR-iOS.git'
+  #  pod 'TesseractOCRiOS', :git => 'https://github.com/gali8/Tesseract-OCR-iOS.git
+  # Pods for boxECM
 
   # Pods for boxECM
 

@@ -6,20 +6,41 @@ PODS:
   - box-ios-sdk/logger (1.0.14)
   - box-ios-sdk/no-arc (1.0.14):
     - box-ios-sdk/logger
+  - GPUImage (0.1.7)
+  - ImageMagick (6.8.8-9):
+    - ImageMagick/jpeg (= 6.8.8-9)
+    - ImageMagick/png (= 6.8.8-9)
+    - ImageMagick/tiff (= 6.8.8-9)
+    - ImageMagick/wand (= 6.8.8-9)
+  - ImageMagick/jpeg (6.8.8-9)
+  - ImageMagick/png (6.8.8-9)
+  - ImageMagick/tiff (6.8.8-9)
+  - ImageMagick/wand (6.8.8-9)
   - Nimble (6.0.1)
   - Quick (1.1.0)
+  - SwiftOCR (1.0):
+    - GPUImage
+  - TesseractOCRiOS (4.0.0)
+  - UIImageDSP (0.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - box-ios-sdk
+  - GPUImage
+  - ImageMagick (= 6.8.8-9)
   - Nimble (from `https://github.com/Quick/Nimble.git`)
   - Quick (from `https://github.com/Quick/Quick.git`)
+  - SwiftOCR
+  - TesseractOCRiOS (from `https://github.com/chaoskyme/Tesseract-OCR-iOS.git`)
+  - UIImageDSP
 
 EXTERNAL SOURCES:
   Nimble:
     :git: https://github.com/Quick/Nimble.git
   Quick:
     :git: https://github.com/Quick/Quick.git
+  TesseractOCRiOS:
+    :git: https://github.com/chaoskyme/Tesseract-OCR-iOS.git
 
 CHECKOUT OPTIONS:
   Nimble:
@@ -28,13 +49,21 @@ CHECKOUT OPTIONS:
   Quick:
     :commit: e4fa1e85c0305ba4e0866f25812d3fa398f3a048
     :git: https://github.com/Quick/Quick.git
+  TesseractOCRiOS:
+    :commit: 36fa76ea55e1602f2c799e7484fa2dba6bc6a0d9
+    :git: https://github.com/chaoskyme/Tesseract-OCR-iOS.git
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   box-ios-sdk: 8034a7b0fcac562105725afa744011c81da99398
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
+  ImageMagick: e8c089d133679d505c98dc97f3dc5be0e706e1df
   Nimble: 1aafe036e5b03c5a30d07430fddca564af570696
   Quick: 4700beb8056662b579facd79eaca7f04fb3d48e6
+  SwiftOCR: c0965eee5761acf3c780ba2c90020dc1c59de7a1
+  TesseractOCRiOS: 729989db3984bb60ba3addb053569b172d48c409
+  UIImageDSP: ae915711ee214c1760ff6768f6f2a35503a4e4dc
 
-PODFILE CHECKSUM: 713caaa58ca4ce427ef8bfea659d0078c74f1d1c
+PODFILE CHECKSUM: e5ecf8197e77dfd90f358535796dd61bf21cd198
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.0.beta.1
